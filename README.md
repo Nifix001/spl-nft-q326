@@ -33,7 +33,7 @@ Place your image at the project root.
 
 ```
 root/
-└── image.   ← here
+└── image.png   ← here
 ```
 
 ### 4. (Optional) Set a custom RPC URL
@@ -80,3 +80,8 @@ Uses **@solana/kit** and **mpl-core** via UMI. Images and metadata are stored on
 Run the mint scripts in order first. Paste the URI/address logged by each step into the next script before running it. `nft_transfer.ts` and `nft_burn.ts` operate on an already-minted asset — paste the asset address logged by `nft_mint.ts` into whichever one you run.
 
 > ⚠️ `nft_burn.ts` is irreversible — the asset account is closed on-chain and cannot be recovered. Double-check the asset address before running it.
+
+![SPL Initialize test passing](./src/nft/img/Screenshot%20spl%20init.png)
+![SPL metadata test passing](./src/nft/img/Screenshot%20spl-metadata.png)
+![SPL Mint and transfer test passing](./src/nft/img/Screenshot%20spl%20mint-transfer.png)
+![NFT test passing](./src/nft/img/Screenshot%20nft.png)
